@@ -23,6 +23,7 @@ matrix:
     - env: PGVERSION=12 TEST=multi
     - env: PGVERSION=13 TEST=multi
     - env: LINTING=true
+    - env: LINTING=false
 before_install:
   - git clone -b v0.7.18 --depth 1 https://github.com/citusdata/tools.git
   - sudo make -C tools install
